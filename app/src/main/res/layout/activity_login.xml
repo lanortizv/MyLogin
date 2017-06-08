@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main.background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.example.lan.mylogin.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/main.ll.margin"
+        android:background="@drawable/shape_fondo"
+        android:elevation="@dimen/main.ll.elevation"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/main.iv.height"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/log" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/main.tv.titulo.margin"
+                    android:gravity="center_horizontal"
+                    android:text="@string/main.et.titulo"
+                    android:textSize="@dimen/main.tv.titulo.size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main.et.marginleft"
+                    android:layout_marginRight="@dimen/main.et.marginright"
+                    android:fontFamily="roboto-regular"
+                    android:hint="@string/main.et.user"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main.et.marginleft"
+                    android:layout_marginRight="@dimen/main.et.marginright"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="roboto-regular"
+                    android:hint="@string/main.et.pass"
+                    android:inputType="textPassword" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/main.ll.marginbottom"
+                    android:layout_marginLeft="@dimen/main.ll.marginleft"
+                    android:layout_marginRight="@dimen/main.ll.marginright"
+                    android:layout_marginTop="@dimen/main.ll.margintop"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnRegistro"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/main.btn.marginright"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:drawableLeft="@drawable/ic_person_add_white_24dp"
+                        android:paddingLeft="@dimen/main.btn.paddingleft"
+                        android:paddingRight="@dimen/main.btn.paddingright"
+                        android:text="@string/main.btn.registro"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/main.btn.textsize"
+                        android:onClick="registrar"/>
+
+                    <Button
+                        android:id="@+id/btnIngresar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/main.btn.marginleft"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/colorAccent"
+                        android:drawableRight="@drawable/ic_done_white_24dp"
+                        android:paddingLeft="@dimen/main.btn.paddingleft"
+                        android:paddingRight="@dimen/main.btn.paddingright"
+                        android:text="@string/main.btn.ingresar"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/main.btn.textsize" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

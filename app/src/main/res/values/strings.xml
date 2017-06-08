@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MyLogin</string>
+    <string name="registro.name">Registro</string>
+
+    <string name="main.btn.ingresar">Ingresar</string>
+    <string name="main.btn.registro">Registro</string>
+
+    <string name="main.et.user">Ingrese su usuario</string>
+    <string name="main.et.pass">Ingrese su contraseña</string>
+
+    <string name="main.et.titulo">MyLogin</string>
+
+    <string name="registro.et.nombres">Ingrese su nombre de usuario</string>
+    <string name="registro.et.cuenta">Ingrese el nombre de la cuenta</string>
+    <string name="registro.et.cuentapass">Ingrese la contraseña de la cuenta</string>
+    <string name="registro.et.pagina">Ingrese el link del sitio web de la cuenta</string>
+    <string name="registro.et.apellidos">Ingrese su contraseña</string>
+    <string name="registro.et.confirmar">Confirme su contraseña</string>
+
+    <string name="detalle.btn.volver">Volver</string>
+    <string name="title_activity_lista">Mis cuentas</string>
+    <string name="registro.user">Registro nuevo usuario</string>
+    <string name="registro.cuenta">Registro nueva cuenta</string>
+
+</resources>
